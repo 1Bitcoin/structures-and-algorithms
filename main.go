@@ -25,6 +25,7 @@ func main() {
 	  t.Insert(13)
 	  t.Insert(0)
 
+
 	  t.PrintInorder()*/
 
 	var array []int
