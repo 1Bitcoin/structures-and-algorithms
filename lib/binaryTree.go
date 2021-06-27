@@ -36,6 +36,7 @@ func (t *TreeNode) Insert(value int) error {
 		return t.Right.Insert(value)
 	}
 	return nil
+	
 }
 
 //Find finds the treenode for the given node val
