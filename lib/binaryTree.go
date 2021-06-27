@@ -11,7 +11,7 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-func (t *TreeNode) Insert (value int) error {
+func (t *TreeNode) Insert(value int) error {
 	if t == nil {
 		return errors.New("Tree is nil")
 	}

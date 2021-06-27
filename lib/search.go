@@ -4,7 +4,6 @@ import "fmt"
 
 func BinarySearch(array []int, target int) bool {
 	if len(array) > 0 {
-
 		left := 0
 		right := len(array) - 1
 		middle := len(array) / 2

@@ -17,15 +17,15 @@ func main() {
 
 	/*t := lib.TreeNode{Val: 8, Left: nil, Right: nil}
 
-	t.Insert(1)
-	t.Insert(200)
-	t.Insert(-5)
-	t.Insert(12)
-	t.Insert(-63)
-	t.Insert(13)
-	t.Insert(0)
+	  t.Insert(1)
+	  t.Insert(200)
+	  t.Insert(-5)
+	  t.Insert(12)
+	  t.Insert(-63)
+	  t.Insert(13)
+	  t.Insert(0)
 
-	t.PrintInorder()*/
+	  t.PrintInorder()*/
 
 	var array []int
 	array = []int{1, 2}
@@ -46,7 +46,7 @@ func FindOdd(seq []int) int {
 	}
 
 	for _, elem := range seq {
-		if t[elem] % 2 != 0 {
+		if t[elem]%2 != 0 {
 			answer = elem
 			break
 		}
@@ -65,7 +65,7 @@ func Find(a []string, x string) int {
 
 func Solution(str string) []string {
 	var result []string
-	for i := 0; i < len(str); i+=2 {
+	for i := 0; i < len(str); i += 2 {
 		result = append(result, str[i:i+2])
 	}
 	return result
@@ -101,14 +101,13 @@ func FindShort(s string) int {
 }
 
 func DuplicateEncode(word string) string {
-	t := make(map[rune] int)
+	t := make(map[rune]int)
 	word = strings.ToLower(word)
 	newString := ""
 
 	for _, c := range word {
 		t[c]++
 	}
-
 
 	for _, c := range word {
 		if t[c] == 1 {
@@ -134,4 +133,3 @@ func DuplicateEncode(word string) string {
 func myAppend (array []int, number int)  []int {
 	return append(array, number)
 }*/
-

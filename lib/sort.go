@@ -6,7 +6,6 @@ import (
 )
 
 func GenerateSlice(size int) []int {
-
 	slice := make([]int, size)
 	rand.Seed(time.Now().UnixNano())
 	for i := 0; i < size; i++ {
@@ -27,7 +26,7 @@ func QuickSort(ar []int) {
 }
 
 func partition(ar []int) int {
-	pivot := ar[len(ar) / 2]
+	pivot := ar[len(ar)/2]
 
 	left := 0
 	right := len(ar) - 1
