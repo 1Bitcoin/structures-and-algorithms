@@ -4,6 +4,7 @@ import "fmt"
 
 func BinarySearch(array []int, target int) bool {
 	if len(array) > 0 {
+
 		left := 0
 		right := len(array) - 1
 		middle := len(array) / 2
@@ -13,6 +14,7 @@ func BinarySearch(array []int, target int) bool {
 		}
 
 		if array[middle] > target {
+
 			right = middle - 1
 		}
 
@@ -20,12 +22,10 @@ func BinarySearch(array []int, target int) bool {
 			left = middle + 1
 		}
 
-		return BinarySearch(array[left:right + 1], target)
+		return BinarySearch(array[left:right+1], target)
 
 	} else {
 		fmt.Println("Элемент не найден!")
 		return false
 	}
 }
-
-
