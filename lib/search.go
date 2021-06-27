@@ -10,6 +10,7 @@ func BinarySearch(array []int, target int) bool {
 
 		if array[middle] == target {
 			return true
+
 		}
 
 		if array[middle] > target {
