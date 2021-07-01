@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -24,15 +23,15 @@ func main() {
 	  t.Insert(13)
 	  t.Insert(0)
 
-
 	  t.PrintInorder()*/
 
-	var array []int
+	/*var array []int
 	array = []int{1, 2}
 
 	array = append(array, 23)
 
-	fmt.Println(array)
+	fmt.Println(array)*/
+
 }
 
 // Generates a slice of size, size filled with random numbers
